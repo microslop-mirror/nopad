@@ -1,0 +1,40 @@
+{
+    name: "NoPad",
+    description: "AI-free rich-text-free plain-text editor",
+    author: "VExcess <github.com/vexcess>",
+    repository: "https://github.com/microslop-mirror/librepaint-3d",
+
+    genericName: "Text Editor",
+    // icon: "assets/logo.png",
+    categories: ["TextTools", "TextEditor"],
+    mimeType: ["text/plain"],
+
+    modules: {
+        nopad: {
+            root: "src/nopad.dart",
+            version: "0.0.1",
+            dependencies: [
+                "drawlite_dart",
+                "ui_toolkit"
+            ]
+        },
+
+        // import drawlite + deps
+        $importAll: [
+            {
+                local: "../drawlite",
+                remote: "https://github.com/microslop-mirror/drawlite"
+            },
+            {
+                local: "../ui-toolkit",
+                remote: "https://github.com/microslop-mirror/ui-toolkit"
+            },
+        ]
+    },
+
+    default: "nopad",
+
+    run: {
+        dev: "dart run -r src/nopad.dart"
+    }
+}
