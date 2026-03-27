@@ -1,5 +1,8 @@
 # NoPad
+
 > Note: NoPad is in pre-alpha stage. It is not stable or fully featured yet. However, it is developed enough that it technically can be used as a text editor.
+
+![meme](https://raw.githubusercontent.com/microslop-mirror/nopad/refs/heads/main/meme.webp)
 
 NoPad is a near clone of the good old fashioned Microsoft notepad. Zero AI. Zero bloat. 100% free and open source. NoPad deviates from Notepad's design where I felt that Notepad's design is buns, but a Windows 10 user should feel right at home using NoPad.
 
